@@ -57,9 +57,9 @@ npm start
 
 ## License ⚖️
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
 
 ## Author 🖊️
 
-**Mariam Atef Hassan  - October 2022**
+**Mariam Atef Hassan  - September 2023**
 
