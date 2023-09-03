@@ -106,9 +106,9 @@ function App() {
 
         <h3 className="text-start fw-bold mt-2">Results:</h3>
         <div className="results pb-4">
-          <Result unit="Celsius" value={Math.round(converted.celsius*1000)/1000} unitSym="°C" />
-          <Result unit="Fahrenheit" value={Math.round(converted.fahrenheit*1000)/1000} unitSym="°F" />
-          <Result unit="Kelvin" value={Math.round(converted.kelvin*1000)/1000} unitSym="°K" />
+          <Result unit="Celsius" value={Math.round(converted.celsius*1000)/1000} unitSym="°C" key='1'/>
+          <Result unit="Fahrenheit" value={Math.round(converted.fahrenheit*1000)/1000} unitSym="°F" key='2'/>
+          <Result unit="Kelvin" value={Math.round(converted.kelvin*1000)/1000} unitSym="°K" key='3'/>
         </div>
       </div>
     </>
