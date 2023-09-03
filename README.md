@@ -8,7 +8,6 @@
 - [Technologies](#technologies)
 - [Pre-requisites](#pre-requisites-grey_question)
 - [Setup](#setup)
-- [Approach](#approach)
 - [License](#license)
 - [Author](#author)
 
@@ -18,9 +17,8 @@ Temperature Converter is a simple React.js app that takes user input for a speci
 
 ## Demo
 
-`![Writing](https://unsplash.com/photos/VBPzRgd7gfc)`
+[visit website](https://mariamatef226.github.io/CodeAlpha_Temperature_Converter_Website/)
 
-Picture by [Kelly Sikkema](https://unsplash.com/@kellysikkema)
 
 ## Technologies 💻
 
@@ -57,9 +55,6 @@ npm start
 5. Open your web browser and navigate to http://localhost:3000 to see the app in action.
 
 
-## Approach
-I adopted the `BEM` naming style for my css class names and ...
-
 ## License ⚖️
 
 This project is licensed under the [MIT License](LICENSE).
@@ -67,3 +62,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## Author 🖊️
 
 **Mariam Atef Hassan  - October 2022**
+
