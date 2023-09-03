@@ -3,10 +3,10 @@
 
 ## Table of Content:
 
-- [Project Description](#project-description)
+- [Project Description](#project-description-page_facing_up)
 - [Demo](#demo)
 - [Technologies](#technologies)
-- [Pre-requisites](#pre-requisites)
+- [Pre-requisites](#pre-requisites-grey_question)
 - [Setup](#setup)
 - [Approach](#approach)
 - [License](#license)
@@ -14,7 +14,7 @@
 
 ## Project Description :page_facing_up:
 
-Temperature Converter is a simple React.js app that takes user input for a specific temperature in a specific measuring unit, and converts it to other units. Three measuring units are included: Celsius, Fahrenheit and Kelvin. In case of non-numeric input, conversion is prohibited and an alert message is displayed. The application is responsive on all devices.
+Temperature Converter is a simple React.js app that takes user input for a specific temperature in a specific measuring unit, and converts it to other units automatically. Three measuring units are included: Celsius, Fahrenheit and Kelvin. In case of non-numeric input, conversion is prohibited and an alert message is displayed. The conversion process is done in realtime manner.The application is responsive on all devices.
 
 ## Demo
 
@@ -59,7 +59,6 @@ npm start
 
 ## Approach
 I adopted the `BEM` naming style for my css class names and ...
-
 
 ## License ⚖️
 

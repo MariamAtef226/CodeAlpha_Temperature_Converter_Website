@@ -13,11 +13,13 @@ function App() {
   // Handle Form control changes to reflect in react states for single source of truth
   function tempChange(event) {
     let value = event.target.value;
+    convert(value, currentUnit); // for realtime conversion
     setTemperature(value);
   }
 
   function currentUnitChange(event) {
     let value = event.target.value;
+    convert(temperature, value); // for realtime conversion
     setCurrentUnit(value);
   }
 
@@ -35,30 +37,30 @@ function App() {
   }
 
   // conversion logic
-  function convert() {
+  function convert(v,curr) {
     // check if valid convertion
-    if (!isNaN(temperature)) {
-      switch (currentUnit) {
+    if (!isNaN(v)) {
+      switch (curr) {
         case "c":
           setConverted((prev) => {
-            let f = celsiusToFahrenheit(temperature);
+            let f = celsiusToFahrenheit(v);
             let k = fahrenheitToKelvin(f);
-            return { celsius: temperature, fahrenheit: f, kelvin: k };
+            return { celsius: v, fahrenheit: f, kelvin: k };
           });
           break;
         case "f":
           setConverted((prev) => {
-            let k = fahrenheitToKelvin(temperature);
+            let k = fahrenheitToKelvin(v);
             let c = kelvinToCelsius(k);
-            return { celsius: c, fahrenheit: temperature, kelvin: k };
+            return { celsius: c, fahrenheit: v, kelvin: k };
           });
 
           break;
         case "k":
           setConverted((prev) => {
-            let c = kelvinToCelsius(temperature);
+            let c = kelvinToCelsius(v);
             let f = celsiusToFahrenheit(c);
-            return { celsius: c, fahrenheit: f, kelvin: temperature };
+            return { celsius: c, fahrenheit: f, kelvin: v };
           });
 
           break;
@@ -102,20 +104,11 @@ function App() {
           Input temperature should be a valid number!
         </div>
 
-        <button
-          className={`clear-outline p-2 m-2 mt-2 convert ${
-            !isNaN(temperature) && "enable"
-          }`}
-          onClick={convert}
-          disabled={isNaN(temperature)}
-        >
-          Convert
-        </button>
-
+        <h3 className="text-start fw-bold mt-2">Results:</h3>
         <div className="results pb-4">
-          <Result unit="Celsius" value={converted.celsius} unitSym="°C" />
-          <Result unit="Fahrenheit" value={converted.fahrenheit} unitSym="°F" />
-          <Result unit="Kelvin" value={converted.kelvin} unitSym="°K" />
+          <Result unit="Celsius" value={Math.round(converted.celsius*1000)/1000} unitSym="°C" />
+          <Result unit="Fahrenheit" value={Math.round(converted.fahrenheit*1000)/1000} unitSym="°F" />
+          <Result unit="Kelvin" value={Math.round(converted.kelvin*1000)/1000} unitSym="°K" />
         </div>
       </div>
     </>

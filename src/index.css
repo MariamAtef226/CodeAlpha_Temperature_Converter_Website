@@ -5,6 +5,7 @@
 
 body{
   background-image: url('https://wallpaperaccess.com/full/896979.jpg');
+  background-color: #114793;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Lato', sans-serif !important;
@@ -71,7 +72,7 @@ select, .unit-ab{
 }
 
 .caution{
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 @media (min-width:740px){
