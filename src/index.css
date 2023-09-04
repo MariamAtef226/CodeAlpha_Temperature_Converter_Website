@@ -5,7 +5,6 @@
 
 body{
   background-image: url('https://wallpaperaccess.com/full/896979.jpg');
-  background-color: #114793;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Lato', sans-serif !important;
@@ -14,6 +13,7 @@ body{
 
 #root{
   position: relative;
+  background-image: linear-gradient(to top, #5099cb, #ffbba4);
   height:100vh;
 }
 
