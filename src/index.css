@@ -75,6 +75,8 @@ select, .unit-ab{
   font-size: 0.75rem;
 }
 
+/* for larger screens */
+
 @media (min-width:740px){
   .converter-container{
     width:50%;
